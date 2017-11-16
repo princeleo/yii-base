@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #59769e;
+
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.login-container {
+    position: absolute;
+    width: 387px;
+    top: 200px;
+    left: 50%;
+    margin-left: -195px;
+    z-index: 1000;
+}
+.login-title{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.login-wrap .hd{
+    position: relative;
+    height: 55px;
+}
+.login-wrap .hd > div{
+    background-color: #9eb4d2;
+    width: 137px;
+    height: 45px;
+    line-height: 45px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.login-wrap .static{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.login-wrap .quick{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.login-wrap .hd .choose{
+    width: 250px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #fff;
+    color: #627ea4;
+    font-size: 24px;
+}
+.login-wrap .con{
+    padding: 34px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.service-login .con{
+    border-radius: 10px
+}
+.service-login .tit{
+    font-size: 24px;
+    color: #627ea4;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.login-wrap .login-box{
+    display: none;
+}
+.login-wrap .fm-wrap{
+    margin-bottom: 30px;
+}
+
+.login-wrap .fm-wrap-input{
+    position: relative;
+    width: 320px;
+    height: 45px;
+    border: 1px solid #dfdfdf;
+    display: table;
+    border-collapse: separate;
+}
+.help-block{
+    display: none;
+    margin-top: 5px;
+    color: #737373;
+    font-size: 14px;
+}
+.has-error .help-block{
+    display: block;
+    color: #e74c3c;
+
+}
+.has-error .fm-wrap-input{
+    border-color: #e74c3c;
+}
+.login-wrap .fm-wrap-code .fm-wrap-input{
+    width: 220px;
+    margin-right: 9px;
+}
+.login-wrap .code-img{
+    width: 90px;
+    height: 45px;
+    border: 1px solid #dfdfdf;
+    float: right;
+    cursor: pointer;
+}
+.login-wrap .code-img img{
+    width: 100%;
+    height: 100%;
+}
+.login-wrap .fm-addon,
+.login-wrap .fm-text{
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 0 none;
+}
+.login-wrap .fm-addon{
+    width: 43px;
+    height: 43px;
+}
+.login-wrap .fm-text{
+    float: left;
+    padding: 6px 10px;
+    height: 44px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+.login-btn{
+    width: 320px;
+    height: 52px;
+    background-color: #4c6c97;
+    border: 1px solid #4c6c97;
+    line-height: 52px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+}
+.login-btn:active{
+    opacity: 0.8;
+}
+.login-btn.disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-notice{
+    width: 320px;
+    height: 45px;
+    line-height: 20px;
+    margin:30px auto 0 auto;
+    color: #686b6c;
+    font-size: 16px;
+    padding: 12px 15px 12px 50px;
+}
+.notice-error{
+    background: #fceee8;
+}
+.notice-success{
+    background: #f3fdf3;
+}
+
+/*扫码登录*/
+.qrcode-desc{
+    font-size: 14px;
+    color: #686b6c;
+    text-align: center;
+}
+.qrcode-img{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+.qrcode-img img{
+    width: 250px;
+    height: 250px;
+}
+.enterprise-wechat{
+    width: 260px;
+    height: 45px;
+    line-height: 25px;
+    border: 1px solid #dfdfdf;
+    margin:0 auto ;
+    padding:8px 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+/*图标*/
+.wechat-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    vertical-align: -5px;
+    margin-right: 5px;
+    background-image:url(../img/login/wechat_icon.png) ;
+    background-repeat: no-repeat;
+}
+.error-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: -35px;
+    vertical-align: -5px;
+    background-image:url(../img/login/error_icon.png) ;
+    background-repeat: no-repeat;
+}
+.success-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: -35px;
+    vertical-align: -5px;
+    background-image:url(../img/login/success_icon.png) ;
+    background-repeat: no-repeat;
+}
+.notice-descript{
+    margin-left: 10px;
+}
+
+.login-icon{
+    background-image:url(../img/login/login_icon.png) ;
+    background-repeat: no-repeat;
+}
+.user-icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin:auto ;
+}
+.lock-icon{
+    display: block;
+    width: 20px;
+    height: 21px;
+    margin:auto ;
+    background-position: 0 -73px;
+}
+
+@media screen and (max-height: 900px){
+    .login-container {
+        top: 100px;
+    }
+}
