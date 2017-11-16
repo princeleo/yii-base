@@ -180,7 +180,6 @@ class BaseController extends Controller
             return json_encode($result);
         }
 
-        //注意：如果在此之前有输出，会出现空白
         exit(json_encode($result));
     }
 
